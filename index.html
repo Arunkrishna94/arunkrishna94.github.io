@@ -9,32 +9,32 @@
     /* ===== GLOBAL ===== */
     body {
       margin: 0;
-      background-color: #0f172a; /* Outer shell */
+      background-color: #0f172a;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      line-height: 1.6;
+      line-height: 1.55;
     }
 
     .container {
       max-width: 960px;
-      margin: 80px auto;
-      padding: 56px;
+      margin: 60px auto;
+      padding: 48px;
       background: #ffffff;
-      border-radius: 14px;
+      border-radius: 12px;
       box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
     }
 
-    /* ===== EXECUTIVE HEADER ===== */
+    /* ===== HEADER ===== */
     .header {
-      background-color: #0f172a; /* Professional slate */
-      padding: 36px;
-      border-radius: 12px;
-      margin-bottom: 48px;
+      background-color: #0f172a;
+      padding: 32px;
+      border-radius: 10px;
+      margin-bottom: 40px;
     }
 
     .header h1 {
-      font-size: 36px;
+      font-size: 34px;
       color: #ffffff;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .subtitle {
@@ -44,28 +44,24 @@
     }
 
     .links {
-      margin-top: 14px;
+      margin-top: 12px;
     }
 
     .links a {
       margin-right: 20px;
       color: #93c5fd;
-      font-weight: 500;
-      text-decoration: none;
       font-size: 14px;
-    }
-
-    .links a:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     /* ===== SECTIONS ===== */
     h2 {
-      margin-top: 48px;
+      margin-top: 40px;
       font-size: 20px;
       padding-bottom: 6px;
       color: #1e293b;
       border-bottom: 2px solid #e2e8f0;
+      page-break-after: avoid;
     }
 
     p {
@@ -75,19 +71,20 @@
     }
 
     ul {
-      margin-top: 8px;
+      margin-top: 6px;
       padding-left: 18px;
     }
 
     li {
       font-size: 14px;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
       color: #1f2937;
     }
 
     /* ===== EXPERIENCE ===== */
     .role {
-      margin-top: 28px;
+      margin-top: 22px;
+      page-break-inside: avoid;
     }
 
     .role-title {
@@ -99,7 +96,6 @@
     .company {
       font-size: 14px;
       color: #334155;
-      margin-top: 2px;
     }
 
     .duration {
@@ -108,11 +104,51 @@
       margin-bottom: 6px;
     }
 
+    /* ===== CERTIFICATIONS ===== */
+    .cert {
+      margin-top: 14px;
+      page-break-inside: avoid;
+    }
+
+    .cert-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    .cert-org {
+      font-size: 14px;
+      color: #334155;
+    }
+
+    .cert-meta {
+      font-size: 13px;
+      color: #64748b;
+    }
+
     /* ===== FOOTER ===== */
     footer {
-      margin-top: 64px;
-      font-size: 13px;
+      margin-top: 48px;
+      font-size: 12px;
       color: #6b7280;
+    }
+
+    /* ===== PRINT OPTIMIZATION ===== */
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .container {
+        box-shadow: none;
+        margin: 0;
+        border-radius: 0;
+      }
+
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
     }
   </style>
 </head>
@@ -120,7 +156,7 @@
 <body>
   <div class="container">
 
-    <!-- ===== HEADER ===== -->
+    <!-- HEADER -->
     <header class="header">
       <h1>Arun Krishna GA</h1>
       <div class="subtitle">
@@ -128,14 +164,13 @@
         Lead Cloud & Platform Engineer | Multi-Cloud Architecture | Kubernetes | Terraform | GitOps |
         Observability, Reliability, Security & Cost Optimization | AIOps & GenAI Automation
       </div>
-
       <div class="links">
         <a href="https://www.linkedin.com/in/arun-krishna-ga-akdk29121994/" target="_blank">LinkedIn</a>
         <a href="https://github.com/arunkrishna94" target="_blank">GitHub</a>
       </div>
     </header>
 
-    <!-- ===== ABOUT ===== -->
+    <!-- ABOUT -->
     <section>
       <h2>About</h2>
       <p>
@@ -146,7 +181,7 @@
       </p>
     </section>
 
-    <!-- ===== EXPERIENCE ===== -->
+    <!-- EXPERIENCE -->
     <section>
       <h2>Experience</h2>
 
@@ -181,4 +216,65 @@
       </div>
 
       <div class="role">
-        <div class="role-title">DevOp
+        <div class="role-title">DevOps Engineer</div>
+        <div class="company">Sun Direct TV Private Limited · Full-time</div>
+        <div class="duration">Jun 2019 – Aug 2020 · Chennai, India (On-site)</div>
+        <ul>
+          <li>Maintained production systems with focus on uptime and performance.</li>
+          <li>Handled Unix-based troubleshooting and incident response.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-title">Cloud Engineer</div>
+        <div class="company">Hindi Software Solution · Full-time</div>
+        <div class="duration">Nov 2017 – May 2019 · Chennai, India (On-site)</div>
+        <ul>
+          <li>Built strong foundations in Linux, cloud, and scripting.</li>
+          <li>Supported infrastructure setup and application hosting.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section>
+      <h2>Certifications</h2>
+
+      <div class="cert">
+        <div class="cert-title">Professional Cloud Architect</div>
+        <div class="cert-org">Google Cloud</div>
+        <div class="cert-meta">Issued Nov 2025 · Expires Nov 2027</div>
+      </div>
+
+      <div class="cert">
+        <div class="cert-title">HashiCorp Certified: Terraform Associate (003)</div>
+        <div class="cert-org">HashiCorp</div>
+        <div class="cert-meta">Issued Nov 2023</div>
+      </div>
+
+      <div class="cert">
+        <div class="cert-title">Full Stack Web Development with Python & Django</div>
+        <div class="cert-org">Udemy</div>
+        <div class="cert-meta">Issued Sep 2023</div>
+      </div>
+
+      <div class="cert">
+        <div class="cert-title">Microsoft Certified Developer Associate</div>
+        <div class="cert-org">Microsoft</div>
+        <div class="cert-meta">Issued Jun 2021</div>
+      </div>
+
+      <div class="cert">
+        <div class="cert-title">AWS Certified Solutions Architect – Associate</div>
+        <div class="cert-org">Amazon Web Services</div>
+        <div class="cert-meta">Issued Oct 2020</div>
+      </div>
+    </section>
+
+    <footer>
+      © Arun Krishna GA
+    </footer>
+
+  </div>
+</body>
+</html>
