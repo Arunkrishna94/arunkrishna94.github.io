@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arun Krishna GA | Lead Cloud & Platform Engineer</title>
 
-  <!-- Professional Fonts -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,31 +15,32 @@
       margin: 0;
       background-color: #0b1220;
       font-family: "Source Serif 4", serif;
-      line-height: 1.6;
+      line-height: 1.55;
       font-size: 15px;
     }
 
     .container {
       max-width: 960px;
-      margin: 60px auto;
-      padding: 52px;
+      margin: 48px auto;
+      padding: 44px;
       background: #ffffff;
       border-radius: 14px;
       box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
     }
 
+    /* Header */
     .header {
       background-color: #0b1220;
-      padding: 36px;
+      padding: 32px;
       border-radius: 12px;
-      margin-bottom: 44px;
+      margin-bottom: 36px;
     }
 
     .header h1 {
       font-family: "Inter", sans-serif;
-      font-size: 36px;
+      font-size: 34px;
       color: #ffffff;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
       letter-spacing: -0.3px;
     }
 
@@ -51,11 +52,11 @@
     }
 
     .links {
-      margin-top: 14px;
+      margin-top: 10px;
     }
 
     .links a {
-      margin-right: 20px;
+      margin-right: 18px;
       color: #5eead4;
       font-family: "Inter", sans-serif;
       font-size: 14px;
@@ -63,19 +64,77 @@
       text-decoration: none;
     }
 
+    /* CTA Buttons */
+    .cta-container {
+      margin-top: 18px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-family: "Inter", sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn.primary {
+      background: #2563eb;
+      color: #ffffff;
+    }
+
+    .btn.primary:hover {
+      background: #1d4ed8;
+    }
+
+    .btn.secondary {
+      background: #e5e7eb;
+      color: #0f172a;
+    }
+
+    .btn.secondary:hover {
+      background: #d1d5db;
+    }
+
+    /* QR */
+    .qr-container {
+      margin-top: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .qr-container img {
+      width: 72px;
+      height: 72px;
+      border-radius: 6px;
+    }
+
+    .qr-container span {
+      font-size: 12px;
+      color: #cbd5e1;
+      font-family: "Inter", sans-serif;
+    }
+
+    /* Sections */
     h2 {
       font-family: "Inter", sans-serif;
-      margin-top: 42px;
-      font-size: 20px;
+      margin-top: 32px;
+      font-size: 19px;
       padding-bottom: 6px;
       color: #0f766e;
       border-bottom: 2px solid #e2e8f0;
     }
 
     p {
-      font-size: 16px;
+      font-size: 15px;
       color: #1f2937;
       max-width: 880px;
+      margin-top: 10px;
     }
 
     ul {
@@ -84,19 +143,19 @@
     }
 
     li {
-      font-size: 15px;
-      margin-bottom: 6px;
+      font-size: 14.5px;
+      margin-bottom: 5px;
       color: #1f2937;
     }
 
     .role {
-      margin-top: 24px;
+      margin-top: 20px;
     }
 
     .role-title {
       font-family: "Inter", sans-serif;
       font-weight: 600;
-      font-size: 16px;
+      font-size: 15.5px;
       color: #0b1220;
     }
 
@@ -108,34 +167,30 @@
     .duration {
       font-size: 13px;
       color: #64748b;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .cert {
-      margin-top: 16px;
+      margin-top: 12px;
     }
 
     .cert-title {
       font-family: "Inter", sans-serif;
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 600;
       color: #0b1220;
     }
 
     .cert-org {
-      font-size: 14px;
+      font-size: 13.5px;
       color: #475569;
     }
 
-    .cert-meta {
-      font-size: 13px;
-      color: #64748b;
-    }
-
     footer {
-      margin-top: 52px;
+      margin-top: 40px;
       font-size: 12px;
       color: #64748b;
+      text-align: center;
     }
 
     @media print {
@@ -154,12 +209,32 @@
     <h1>Arun Krishna GA</h1>
     <div class="subtitle">
       Lead / Senior Cloud & Platform Engineer<br/>
-      GCP · AWS · AZURE · Kubernetes · Terraform · GitOps · Observability · DevSecOps · SRE<br/>
+      GCP · AWS · Azure · Kubernetes · Terraform · GitOps · Observability · DevSecOps · SRE<br/>
       📧 arunkrishna94@outlook.com · 📞 +91 97899 89479
     </div>
+
     <div class="links">
       <a href="https://www.linkedin.com/in/arun-krishna-ga-akdk29121994/" target="_blank">LinkedIn</a>
       <a href="https://github.com/arunkrishna94" target="_blank">GitHub</a>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-container">
+      <a href="/CV_Arun_Krishna%20-%20MultiCloud%20Expert%20Latest.pdf" target="_blank" class="btn primary">
+        📄 Download Resume (PDF)
+      </a>
+      <a href="mailto:arunkrishna94@outlook.com" class="btn secondary">
+        ✉️ Contact Me
+      </a>
+      <a href="#experience" class="btn secondary">
+        🚀 View Experience
+      </a>
+    </div>
+
+    <!-- QR -->
+    <div class="qr-container">
+      <img src="/resume-qr.png" alt="Resume QR Code">
+      <span>Scan to save resume</span>
     </div>
   </header>
 
@@ -170,8 +245,7 @@
       Lead Cloud & Platform Engineer with 8+ years of experience designing, automating,
       and operating production-grade cloud infrastructure across Google Cloud Platform,
       AWS, and Azure. Strong expertise in Kubernetes, Terraform, CI/CD, DevSecOps,
-      observability, and reliability engineering with a proven ability to own platforms
-      end-to-end and improve system resilience, security, and cost efficiency.
+      observability, and reliability engineering with proven ownership of platforms end-to-end.
     </p>
   </section>
 
@@ -179,9 +253,9 @@
   <section>
     <h2>Career Impact</h2>
     <ul>
-      <li>8+ years delivering cloud-native platforms across AWS, GCP & Azure. Designed and operated production Kubernetes platforms (GKE & EKS).</li>
-      <li>Built CI/CD and GitOps pipelines enabling zero-downtime deployments. Improved MTTR through Datadog, Cloud Monitoring & proactive alerting</li>
-      <li>Implemented security-first practices including IAM, secrets & vulnerability scans. Reduced cloud cost using autoscaling, rightsizing & usage commitments</li>
+      <li>8+ years delivering cloud-native platforms across AWS, GCP & Azure</li>
+      <li>Zero-downtime CI/CD & GitOps pipelines with measurable MTTR reduction</li>
+      <li>Security-first infrastructure and cloud cost optimization at scale</li>
     </ul>
   </section>
 
@@ -189,7 +263,7 @@
   <section>
     <h2>Core Skills</h2>
     <ul>
-      <li><strong>Cloud:</strong> AWS, Google Cloud Platform, Microsoft Azure</li>
+      <li><strong>Cloud:</strong> AWS, GCP, Azure</li>
       <li><strong>Containers:</strong> Kubernetes (GKE, EKS, AKS), Docker, Helm, Istio</li>
       <li><strong>IaC & GitOps:</strong> Terraform, CloudFormation, ArgoCD</li>
       <li><strong>CI/CD:</strong> GitHub Actions, GitLab CI, Jenkins, Harness</li>
@@ -200,7 +274,7 @@
   </section>
 
   <!-- EXPERIENCE -->
-  <section>
+  <section id="experience">
     <h2>Experience</h2>
 
     <div class="role">
@@ -208,57 +282,21 @@
       <div class="company">TransUnion</div>
       <div class="duration">Nov 2024 – Present · Chennai (Hybrid)</div>
       <ul>
-        <li>Designed and operated scalable GCP infrastructure using GKE, Cloud Run and Terraform</li>
+        <li>Designed and operated scalable GCP platforms using GKE & Terraform</li>
         <li>Built secure CI/CD pipelines enabling zero-downtime deployments</li>
-        <li>Integrated Datadog for metrics, logs, traces and alerting</li>
-        <li>Performed SRE operations across production GKE & AWS EKS clusters</li>
-        <li>Led Helm upgrades, cluster scaling, ingress and security hardening</li>
+        <li>Production SRE operations across GKE & AWS EKS clusters</li>
       </ul>
     </div>
 
     <div class="role">
       <div class="role-title">Technical Specialist – DevOps Engineer</div>
-      <div class="company">iLink Digital (Client: Halliburton)</div>
+      <div class="company">iLink Digital (Halliburton)</div>
       <div class="duration">Apr 2022 – Oct 2024</div>
       <ul>
-        <li>Automated infrastructure provisioning using Terraform and GitLab CI</li>
-        <li>Implemented GitOps workflows with Helm and ArgoCD</li>
-        <li>Built AppStream-based solutions replacing EC2 fleets for cost efficiency</li>
-        <li>Worked on Service Mesh using Istio, Jaeger and Kiali</li>
+        <li>Terraform-driven infra automation and GitOps workflows</li>
+        <li>Service Mesh implementations with Istio ecosystem</li>
       </ul>
     </div>
-
-    <div class="role">
-      <div class="role-title">DevOps Engineer</div>
-      <div class="company">Kryptos Technologies</div>
-      <div class="duration">Sep 2020 – Mar 2022</div>
-      <ul>
-        <li>Built AWS CI/CD pipelines using CodePipeline, CodeBuild and CloudFormation</li>
-        <li>Deployed containerized applications using EKS, Fargate and Docker</li>
-        <li>Implemented monitoring, secrets management and CDN-based architectures</li>
-      </ul>
-    </div>
-
-    <div class="role">
-      <div class="role-title">System Engineer</div>
-      <div class="company">Sun Direct TV Pvt Ltd</div>
-      <div class="duration">June 2019 – Aug 2022</div>
-      <ul>
-        <li>Deployed containerized applications using EKS, Fargate and Docker for FinTech Applications</li>
-        <li>Implemented monitoring, secrets management and CDN-based architectures</li>
-      </ul>
-    </div>
-
-    <div class="role">
-      <div class="role-title">System Engineer</div>
-      <div class="company">Hindi Software Solution Pvt Ltd</div>
-      <div class="duration">June 2019 – Aug 2022</div>
-      <ul>
-        <li>Deployed containerized applications using EKS, Fargate and Docker for FinTech Applications</li>
-        <li>Implemented monitoring, secrets management and CDN-based architectures</li>
-      </ul>
-    </div>
-
   </section>
 
   <!-- CERTIFICATIONS -->
